@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>로또 프로그램</title>
+    <!-- <script type="text/javascript"> -->
+    <script type="text/javascript" src="./js/lotto.js"></script>
+
+    <!-- function randomnum()
+    {
+        let num = []
+        
+        while(num.length<7)
+        {
+            const rand1 = Math.floor(Math.random() * 45)+1;
+            
+            var tag=0;
+
+            for(var a=0; a<num.length; a++)
+            {
+                if(num[a] == rand1)
+                {
+                    tag=1;
+                    break;
+                }
+            }
+
+            if(tag==0) num.push(rand1);
+        }
+
+        var y=" ";
+
+        for(var a=0; a<num.length-1; a++)
+        {
+            y += num[a];
+            if(a==num.length-2) continue;
+            y += ", ";
+        }
+
+        document.getElementsByClassName("get_nums")[0].innerHTML = y;
+
+        y = " ";
+        y += num[num.length-1];
+        document.getElementsByClassName("get_nums")[1].innerHTML = y;
+    } -->
+
+
+    
+
+</head>
+<body>
+
+    <div style="font-size: 30px;"> <b>로또 추첨번호 뽑기</b></div>
+    <br>
+    <div id="rotto_num"> 추첨번호 : <span class="get_nums"> </span> </div>
+    <div id="rotto_num_plus"> 보너스번호 : <span class="get_nums"> </span></div>
+    <button id="button1" onclick="javascript:randomnum()">추첨번호 뽑기</button>
+
+    <br><br><br>
+
+
+</body>
+</html>
